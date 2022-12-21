@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "2c51c714-97a5-45f6-b85c-b6b6b1dccf13",
+		"name": "Avion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24394126"
+	},
+	"item": [
+		{
+			"name": "Select all avion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/flotte/avion/get-all/",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"flotte",
+						"avion",
+						"get-all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"pwd\":\"mmm\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/flotte/Admin/login",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"flotte",
+						"Admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail_kilometrage",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/flotte/kilometrage/3?token=5e7bb0b59f3c340e0cb3be0650906d0687057fe5356a192b7913b04c54574d18c28d46e6395428ab",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"flotte",
+						"kilometrage",
+						"3"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "5e7bb0b59f3c340e0cb3be0650906d0687057fe5356a192b7913b04c54574d18c28d46e6395428ab"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entretien",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/avion/entretien/3",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"avion",
+						"entretien",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail_entretien",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/avion/entretien/detail?identretien=3",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"avion",
+						"entretien",
+						"detail"
+					],
+					"query": [
+						{
+							"key": "identretien",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "choix_assurance",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://tpws-production.up.railway.app/flotte/assurance/get-limit?mois=3",
+					"protocol": "https",
+					"host": [
+						"tpws-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"flotte",
+						"assurance",
+						"get-limit"
+					],
+					"query": [
+						{
+							"key": "mois",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
